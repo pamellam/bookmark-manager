@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23294370'%3E%3Ctext x='50%' y='50%' font-size='400' font-family='FontAwesome' fill='%23294370' text-anchor='middle' dominant-baseline='middle'%3E%3Ctspan>P%3C/tspan%3E%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Open Modal  -->
+  <h1 id="show-modal"> Add Bookmark </h1>
+  <!-- Bookmarks -->
+  <div class="container" id="bookmarks-container">
+    </div>
+  </div>
+  <!-- Modal  -->
+  <div class="modal-container " id="modal">
+    <div class="modal">
+      <i class="fas fa-times close-icon" id="close-modal"></i>
+      <div class="modal-header">
+        <h3> Add Bookmark</h3>
+      </div>
+      <div class="modal-content">
+        <form id="bookmark-form"> 
+          <!-- Website name -->
+          <div class="form-group">
+            <label for="website-name" class="form-label"> Website name</label>
+            <input type="text" class="form-input" id="website-name">
+          </div>
+          <!-- Website Url -->
+          <div class="form-group">
+            <label for="website-url" class="form-label"> Website URL</label>
+            <input type="text" class="form-input" id="website-url">
+          </div>
+          <button type="submit"> Save </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Script-->
+  <script src="script.js"></script>
+</body>
+</html>
